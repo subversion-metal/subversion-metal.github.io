@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Subversion Metal</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0; 
+        }
+
+        h1 {
+            font-size: 1px;
+            color: black;
+        }
+
+        .Band {
+            text-align: center;
+            margin: 5em 0;
+            font-family: 'Marcellus SC', serif;
+        }
+
+        .Band-actions {
+            position: absolute;
+            bottom: 1.5em;
+            text-align: center;
+            width: 100%;
+            font-size: 24px;
+        }
+
+        .Band-action {
+            color: white;
+            margin: 0 10px;
+        }
+
+        .Band-firstScreen {
+            height: 90vh;
+            color: white;
+        }
+
+        .Band-logo {
+            width: 80%;
+        }
+
+        .Band-photo {
+            width: 90%;
+            margin-top: 15%;
+            position: relative;
+            clip: rect(0px,0px,0px,0px);
+        }
+
+        .Band-title {
+            color: white;
+            font-size: 28px;
+            margin-top: 1.6em;
+        }
+
+        .Band-social {
+            font-size: 32px;
+            color: white;
+            margin: 1em 0;
+        }
+
+        .Band-socialLink,
+        .Band-socialLink:focus,
+        .Band-socialLink:active,
+        .Band-socialLink:visited
+        {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5em;
+        }
+
+        @media (min-width: 425px) {
+            .Band-logo {
+                width: 50%;
+            }
+
+            .Band-photo {
+                width: 90%;
+                margin-top: 0;
+            }
+
+            .Band-actions {
+                bottom: 3.5em;
+                font-size: 28px;
+            }
+
+            .Band-firstScreen {
+                height: 95vh;
+            }
+
+            .Band-content {
+                height: 90vh;
+            }
+            
+            .Band-embed {
+                width: 80%;
+            }
+
+            .separator {
+                height: 15em;
+            }
+        }
+
+        @media (min-width: 768px) {
+            
+            .Band-logoContainer {
+                width: 100%;
+                display: block;
+            }
+
+            .Band-logo {
+                width: 30%;
+            }
+
+            .Band-photo {
+                width: 40%;
+            }
+
+            .Band-firstScreen {
+                height: 90vh;
+            }
+
+            .Band-content {
+                height: 90vh;
+            }
+            
+            .Band-playerContainer {
+                width: 30%;
+                margin-left: 35%;
+            }
+        }
+
+        footer {
+            text-align: center;
+            font-family: 'Marcellus SC', serif;
+            color: white;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+</head>
+
+<body>
+    <section class="Band">
+        <div class="Band-firstScreen">
+            <h1>Subversion Metal</h1>
+            <picture class="Band-logoContainer">
+                <img class="Band-logo" src="media/logo.png" alt="Band Logo">
+            </picture>
+            <picture>
+                <img class="Band-photo" src="media/photo.jpg" alt="Band photography by Fausto Velazco">
+            </picture>
+            <div class="Band-actions">
+                <a class="Band-action" href="#hearus">hear us</a>
+                <a class="Band-action" href="#followus">follow us</a>
+            </div>
+        </div>
+        
+        <div class="Band-content">
+            <h2 class="Band-title" id="hearus">
+                Hear us
+            </h2>
+            <div class="Band-playerContainer">
+                    <iframe class="Band-embed" width="100%" height="265" scrolling="no" frameborder="no" src="https://www.reverbnation.com/widget_code/html_widget/artist_1484801?widget_id=55&pwc[included_songs]=1&context_type=page_object&spoid=fan_5785831&pwc[size]=small" style="width:0px;min-width:100%;max-width:100%;"></iframe>
+            </div>
+            <div class="separator"></div>
+            <h2 class="Band-title" id="followus">
+                Follow us
+            </h2>
+            <div class="Band-social">
+                <a target="_blank" class="Band-socialLink" href="https://www.youtube.com/user/SubversionThrash">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a target="_blank" class="Band-socialLink" href="http://www.reverbnation.com/subversionthrash">
+                    <i class="fas fa-star"></i>
+                </a>
+                <a target="_blank" class="Band-socialLink" href="https://soundcloud.com/subversion-pereira-col">
+                    <i class="fab fa-soundcloud"></i>
+                </a>
+            </div>
+            
+            <div class="Band-social">
+                <a target="_blank" class="Band-socialLink" href="https://www.facebook.com/SubversionThrashMetal">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a target="_blank" class="Band-socialLink" href="https://twitter.com/subversion_band">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a target="_blank" class="Band-socialLink" href="https://subversionthrash.bandcamp.com/releases">
+                    <i class="fab fa-bandcamp"></i>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div>
+            &copy; Subversion metal 2018
+        </div>
+    </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+
+</html>
